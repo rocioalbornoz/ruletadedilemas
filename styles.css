@@ -1,0 +1,102 @@
+/* Ajustes generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem; /* Reducir tamaño de la fuente del título */
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+    width: 90%; 
+    max-width: 500px; /* Reducir max-width para mejor centrado */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Contenedor de la ruleta */
+.wheel-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative; 
+    width: 300px; /* Reducir tamaño del contenedor */
+    height: 300px;
+}
+
+/* Estilos del canvas (ruleta) */
+#wheelCanvas {
+    display: block;
+    border-radius: 50%; 
+    background-color: #f0f0f0; 
+    border: 5px solid #0176DE; 
+    width: 300px;
+    height: 300px;
+}
+
+/* Botón para girar la ruleta */
+#spinButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#spinButton:hover {
+    background-color: #3178b5;
+}
+
+/* Caja para mostrar las preguntas */
+.question-box {
+    margin-top: 20px;
+    font-size: 1.2rem; /* Reducir tamaño de fuente */
+    font-weight: bold;
+    color: #0176DE;
+    text-align: center;
+    min-height: 70px; /* Ajustar espacio para resultado */
+    padding: 10px; /* Añadir espacio interior */
+    line-height: 1.3; /* Ajustar altura de línea para acomodar texto */
+}
+
+/* Estilos específicos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem; /* Reducir el título aún más en móviles */
+    }
+
+    #spinButton {
+        padding: 10px 15px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .question-box {
+        font-size: 1rem; /* Reducir aún más en móviles */
+    }
+}
+
